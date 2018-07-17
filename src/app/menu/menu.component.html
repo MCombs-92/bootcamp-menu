@@ -1,7 +1,11 @@
 <nav>
   <ul>
-    <li><a href="">Home</a></li>
-    <li><a href="">About</a></li>
-    <li><a href="">Help</a></li>
+      <menu-item *ngFor="let menuitem of menudata" [menu]="menuitem"></menu-item>
   </ul>
-</nav>>
+</nav>
+<div>
+<button (click)="change()">Change tabel style</button>
+</div>
+<table [ngClass]="">
+  <tr><td>adbc</td><td>def</td></tr>
+</table>

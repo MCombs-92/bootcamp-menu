@@ -7,6 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  menudata = [
+    { href: "/home", display: "Home" },
+    { href: "/about", display: "About" },
+    { href: "/contact", display: "Contact" },
+    { href: "/help", display: "Help" }
+  ];
+
+  tableclass: string;
+  
+  change() {
+    this.tableclass="table table-sm";
+  }
+  
+
   constructor() { }
 
   ngOnInit() {
